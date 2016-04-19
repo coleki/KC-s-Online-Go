@@ -18,9 +18,9 @@ import retrofit2.Call;
 public class LoginActivity extends Activity {
 
     // you should either define client id and secret as constants or in string resources
-    
-    private final String clientId = "REDACTED";
-    private final String clientSecret = "REDACTED";
+
+    private final String clientId = System.getenv("OGSClientID");
+    private final String clientSecret = System.getenv("OGSClientSecret");
     private final String redirectUri = "https://online-go.com/oauth2/access_token";
 
     @Override
